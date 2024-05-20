@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+.container{
+    width: 315px;
+    height: 60px;
+    border: 2px solid red;
+    margin: 0 auto;
+    background-color:#579CD9;
+}
+.nav-bar{
+    width:310px ;
+    height:50px ;
+    margin: 4px auto;
+    border: orange 2px solid;
+    align-items: center;
+}
+.container a{
+    font-family: "Madimi One", sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 10px; 
+    width: 30px; 
+    margin-bottom:30px;
+}
+.close{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.menuBurger{
+    background-color: #579CD9;
+    height: 100vh;
+    list-style:none;
+    text-align: center;
+    margin-top: 10px;
+}
+.menuBurger a{
+    font-size: 20px;
+    font-family: "Amethysta", serif;
+    
+}
+.menuBurger li{
+    background-color:rgba(34,158,106,35%);
+    
+}
+.icon{
+    display: inline;
+    width: 35px;
+    height: 35px;
+    padding-left:9rem;
+}
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
+/*Header*/
