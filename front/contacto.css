@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-color: #f5f5f5;
+  --section-color: #aee4f8;
+  --text-color: #464646;
+  --blue: #0000b3;
+  --font: 'Raleway', sans-serif;
+  --padding-container: 5% 0;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--font);
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #6eace5b3;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero__subtitle {
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.9rem;
+  padding: 20px 0;
+  color: black;
+  font-family: 'Madimi One', sans-serif;
+}
+
+.form {
+  display: grid;
+  gap: 1.5rem;
+  padding: 20px;
+}
+
+.form__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form__label {
+  font-family: 'Amethysta', serif;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: -1.2rem;
+  left: 1rem;
+  padding: 0 0.25rem;
+  transform: translateY(-50%);
+  color: #060606;
+}
+
+.form__input {
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px 0px 25px 0px; /* Bordes semicirculares */
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.form__input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.form__submit {
+  font-family: 'Madimi One', sans-serif;
+  width: fit-content;
+  background-color: #060606;
+  border: none;
+  border: 2px solid #d1d1d4;
+  padding: 0.8rem 2rem;
+  color: #ffffff;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form__submit:hover {
+  background-color: #1f5d9b;
+}
+
+.form__message {
+  height: 100px;
+  resize: none;
+  border-radius: 30px 0px 30px 0px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}

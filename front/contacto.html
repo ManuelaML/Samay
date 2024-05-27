@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contacto.css" />
+  </head>
+  <body>
+    <section class="main__contact">
+      <div class="main__content container">
+        <h2 class="hero__subtitle hero__subtitle--contacto">Contáctanos</h2>
+
+        <br />
+        <form
+          class="form"
+          action="https://formspree.io/f/xbjnqeql"
+          method="POST"
+        >
+          <div class="form__container">
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder=" "
+              required
+            />
+            <label for="name" class="form__label">Nombre</label>
+          </div>
+
+          <div class="form__container">
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" "
+              required
+            />
+            <label for="email" class="form__label">Email</label>
+          </div>
+
+          <div class="form__container">
+            <input
+              type="tel"
+              id="telefono"
+              class="form__input"
+              name="telefono"
+              placeholder=" "
+              required
+            />
+            <label for="telefono" class="form__label">Teléfono</label>
+          </div>
+
+          <div class="form__container">
+            <textarea
+              class="form__input form__message"
+              type="text"
+              id="mensaje"
+              name="mensaje"
+              placeholder=" "
+            ></textarea>
+            <label for="mensaje" class="form__label">Mensaje</label>
+          </div>
+
+          <input type="submit" class="form__submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <script src="contactoValidacion.js"></script>
+  </body>
+</html>
