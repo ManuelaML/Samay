@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Monserrat', sans-serif;
-    background-image: url(./images/ImagenesProductos/saco.jpg);
+    background-image: url("./images/ImagenesProductos/saco.jpg");
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center; 
@@ -19,6 +19,7 @@ body{
     gap: 40px;
     padding-left: 90px;
     padding-top: 50px;
+    margin-bottom: 30px;
 }
 
 .contenedor_productos .producto_hijo{
