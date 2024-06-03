@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contenedor_admin{
+    height: 1030px;
+    background-color: #fff;
+}
+.bienvenida_admin{
+    max-width: 298px;
+    height: 150px;
+    border-radius: 59px;
+    background-color: #46A980;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+}
+.bienvenida_admin .foto_Admin{
+    background-color: #D9D9D9;
+    max-width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto_Admin #administrador{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bienvenida_admin .saludo_admin{
+    max-width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: rgb(194, 184,184,48%);
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 30px 0px 0px 0px ;
+    font-family: Montserrat;
+}
+.contenedor_agregarProductos{
+    height: 250px;
+    max-width:298px ;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+.contenedor_agregarProductos .boton_agregar{
+    background-color: rgb(18,105,69, 81%);
+    font-family: Montserrat;
+    max-width: 300px ;
+    height: 200px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px 0px 0 0px;
+    width: 250px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contenedor_agregarProductos .boton_agregar:hover{
+    background-color: #28862d;
+}
+.result-container_admin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width:298px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    background-color:rgb(87, 156,217,38%) ;
+}
+.result-container_admin .resultado-admin {
+    background-color: rgb(34,158,106, 35%);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px 0px 25px 0px;
+    width: 250px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5px auto;
+}
+.iconos {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.iconos-buton {
+    border: none;
+    background-color: rgb(87, 156,217,38%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.iconos-buton:hover {
+    background-color: #57b784;
+    transform: scale(1.1);
+}
+.footer_admin{
+    max-width: 360px;
+    height:80px ;
+    background-color: #C5DCF2;
+}
+/*Header*/
+/*Media query de */
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .contenedor_admin{
+        height: 750px;
+    }
+    .bienvenida_admin{
+        max-width: 530px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bienvenida_admin .foto_Admin{
+        max-width: 110px;
+        height: 110px;
+    }
+    .bienvenida_admin .saludo_admin{
+        max-width:250px ;
+        font-size: 20px;
+        height: 60px;
+    }
+    .aside_admin{
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .result-container_admin{
+        margin-top: 45px;
+        min-width: 330px;
+    }
+    .footer_admin{
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+    .contenedor_admin{
+        height: 750px;
+    }
+    .bienvenida_admin{
+        max-width: 530px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bienvenida_admin .foto_Admin{
+        max-width: 110px;
+        height: 110px;
+    }
+    .bienvenida_admin .saludo_admin{
+        max-width:250px ;
+        font-size: 20px;
+        height: 60px;
+    }
+    .aside_admin{
+        max-width: 13000px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .result-container_admin{
+        margin-top: 45px;
+        min-width: 330px;
+    }
+    .footer_admin{
+        max-width: 100%;
+    }
+}
+@media  only screen and (min-width: 1301px) and (max-width: 1590px) {
+    .contenedor_admin{
+        height: 750px;
+    }
+    .bienvenida_admin{
+        max-width: 530px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bienvenida_admin .foto_Admin{
+        max-width: 110px;
+        height: 110px;
+    }
+    .bienvenida_admin .saludo_admin{
+        max-width:250px ;
+        font-size: 20px;
+        height: 60px;
+    }
+    .aside_admin{
+        max-width: 1590px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+     .contenedor_agregarProductos{
+       padding-left: 1000px;
+     }
+    .result-container_admin{
+        margin-top: 45px;
+        min-width: 330px;
+    }
+    .footer_admin{
+        max-width: 100%;
+    }
+}
+@media  only screen and (min-width: 1591px)  {
+    .contenedor_admin{
+        height: 750px;
+    }
+    .bienvenida_admin{
+        max-width: 530px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bienvenida_admin .foto_Admin{
+        max-width: 110px;
+        height: 110px;
+    }
+    .bienvenida_admin .saludo_admin{
+        max-width:250px ;
+        font-size: 20px;
+        height: 60px;
+    }
+    .aside_admin{
+        max-width: 8000px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .result-container_admin{
+        margin-top: 45px;
+        min-width: 330px;
+    }
+    .footer_admin{
+        max-width: 100%;
+    }
+
+}
