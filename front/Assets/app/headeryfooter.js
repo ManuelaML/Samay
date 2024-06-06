@@ -10,10 +10,10 @@ header.innerHTML = `
       <a href="#" id="logo">SAMAY</a>
      <div class="texto_menu">
       <ul>
-        <li><a href="front\inicio.html">INICIO</a></li>
+        <li><a href="inicio.html">INICIO</a></li>
         <li><a href="Productos.html">PRODUCTOS</a></li>
         <li><a href="#">BLOG</a></li>
-        <li><a href="Productos.html">CONTACTO</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
       </ul>     
     </div>
       <div class="icon">
@@ -36,7 +36,7 @@ header.innerHTML = `
 footer.innerHTML = `
 <div class="footerTest">
 <div class="contenedor-fotter">
-<img src="./front/images/logo_samay.jpg" alt="logo samay">
+<img src="./images/logo_samay.jpg" alt="logo samay">
 <ul>
   <li><a href="Registro_Usuario.html">Inicio</a></li>
   <li><a href="#">Nosotros</a></li>

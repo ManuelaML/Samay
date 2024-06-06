@@ -20,7 +20,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-width: 310px;
+    max-width: 310px;
     height: 653px;
 }
 
@@ -55,7 +55,7 @@ input[type="checkbox"] {
 }
 label[for="recuerdame"]{
     color: #333;
-    opacity: 90%; /*preguntar ya que no queda el color*/
+    opacity: 0.5; /*preguntar ya que no queda el color*/
 }
 
 button:hover {
@@ -116,7 +116,10 @@ p {
     }
 }
 @media  only screen and (min-width: 1301px) and (max-width: 1590px) {
-
+    .contenedor_principal {
+        max-width: 900px;
+        border: #000 2px solid;
+    }
 }
 @media  only screen and (min-width: 1591px)  {
 
