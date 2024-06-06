@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/styles/inicio.css">
+   <link rel="stylesheet" href="./Assets/styles/Panel_Admin.css">
+    <link rel="icon" href="./images/samay.icon.jpg">
+    <title>Panel Admin</title>
+</head>
+<body>
+    <header></header>
+    <main class="contenedor_admin">
+        <section class="bienvenida_admin">
+           <article class="foto_Admin">
+            <img src="#" alt="foto_Admin" id="administrador">
+           </article>
+           <article class="saludo_admin">
+            <h4>Bienvenido Administrador</h4>
+           </article>
+        </section>
+        <section class="aside_admin">
+        <article class="contenedor_agregarProductos">
+            <button class="boton_agregar">Agregar Productos</button>
+            <button class="boton_agregar">Modificar Productos</button>
+            <button class="boton_agregar">Eliminar Productos</button>
+        </article>
+        <div class="result-container_admin">
+        <form action="#" method="post" id="formulario">
+            <!-- <p class="resultado-admin">
+            </p> -->
+                <label for="nombreProducto">Nombre del producto</label>
+                <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Nombre del producto">
+
+                <label for="referencia">Referencia del producto</label>
+                <input type="text" id="referencia" name="referencia" placeholder="referencia del producto">
+
+                <label for="precio">Precio del Producto por libra</label>
+                <input type="number" id="precio" name="precio" placeholder="precio del producto en libras">
+            
+                <label for="cantidad">Cantidad Producto</label>
+                <input type="number" id="cantidad" name="cantidad" placeholder="cantidad en libras">
+
+                <input type="file" id="imagenInput">
+                <button type="button" type="">Carga tu imagen</button>
+                <button class="boton_agregar" type="submit" >subir producto</button>
+        </form>
+        <div class="iconos">
+            <button class="iconos-buton"><i class="fa-solid fa-pen  icono_tamano" style="color: #000;"></i></button>
+            <button class="iconos-buton"><i class="fa-solid fa-arrow-up-from-bracket icono_tamano" style="color: #050505;"></i></button>
+            <button class="iconos-buton"><i class="fa-regular fa-trash-can icono_tamano" style="color: #050505;"></i></button>
+            <button class="iconos-buton"><i class="fa-solid fa-plus icono_tamano" style="color: #000000;"></i></button>
+        </div>
+        </div>
+    </section>
+    </main>
+    <section class="footer_admin">
+    </section>
+    <script src="./Assets/app/headeryfooter.js"></script>
+    <script src="./Assets/app/inicio.js"></script>
+    <script src="./Assets/app/Panel_administrativo.js"></script>
+</body>
+</html>

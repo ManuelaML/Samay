@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .contenedor_admin{
-    height: 1030px;
+    height: auto;
     background-color: #fff;
 }
 .bienvenida_admin{
@@ -86,6 +86,7 @@
     max-width:298px ;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     padding-top: 40px;
     background-color:rgb(87, 156,217,38%) ;
 }
@@ -138,7 +139,7 @@
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     .contenedor_admin{
-        height: 750px;
+        height: auto;
     }
     .bienvenida_admin{
         max-width: 530px;
@@ -175,6 +176,7 @@
     }
     .bienvenida_admin{
         max-width: 530px;
+        height: 160px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -194,6 +196,9 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .contenedor_agregarProductos{
+        padding-left: 15%;
+      }
     .result-container_admin{
         margin-top: 45px;
         min-width: 330px;
@@ -208,6 +213,7 @@
     }
     .bienvenida_admin{
         max-width: 530px;
+        height: 160px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -229,11 +235,12 @@
         flex-wrap: wrap;
     }
      .contenedor_agregarProductos{
-       padding-left: 1000px;
+       padding-left: 250px;
      }
     .result-container_admin{
         margin-top: 45px;
         min-width: 330px;
+        margin-right: 350px;
     }
     .footer_admin{
         max-width: 100%;
@@ -265,10 +272,14 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    }
+    } 
+     .contenedor_agregarProductos{
+        padding-left: 250px;
+      }
     .result-container_admin{
         margin-top: 45px;
         min-width: 330px;
+        margin-right: 350px;
     }
     .footer_admin{
         max-width: 100%;

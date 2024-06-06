@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #579CD9;
+}
+
+.contenedor_principal {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 310px;
+    height: 653px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color:#E8E8E8 ;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+label[for="recuerdame"]{
+    color: #333;
+    opacity: 90%; /*preguntar ya que no queda el color*/
+}
+
+button:hover {
+    background-color: #619ad8;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+.botones .tamano_icono{
+    font-size: 25px;
+}
+.boton-redSocial {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+#google:hover {
+    background-color: #db4437;
+}
+.boton_SignUp{
+    min-width: 192px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #0056b3;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 20px auto;
+
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .contenedor_principal {
+        max-width: 500px;
+        border: #000 2px solid;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+    .contenedor_principal {
+        max-width: 900px;
+        border: #000 2px solid;
+    }
+}
+@media  only screen and (min-width: 1301px) and (max-width: 1590px) {
+
+}
+@media  only screen and (min-width: 1591px)  {
+
+}
