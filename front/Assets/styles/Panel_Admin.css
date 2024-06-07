@@ -90,6 +90,19 @@
     padding-top: 40px;
     background-color:rgb(87, 156,217,38%) ;
 }
+label[for="nombreProducto"],
+label[for="referencia"],
+label[for="precio"],
+label[for="cantidad"]{
+    display: block;
+    font-family: Monserat;
+    margin-left:2em;
+    margin-top: 10px;
+}
+
+input#nombreProducto .resultado-admin{
+    padding-left: 2em;
+}
 .result-container_admin .resultado-admin {
     background-color: rgb(34,158,106, 35%);
     color: white;

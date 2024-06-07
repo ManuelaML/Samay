@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Monserrat', sans-serif;
+    background-image: url("./saco.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+
+}
+
+.contenedor_productos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+    padding-left: 90px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contenedor_productos .producto_hijo{
+    background-color: rgb(235, 250, 244);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+    padding-top: 10px;
+}
+
+.contenedor_productos .producto_hijo:hover {
+    transform: translateY(-5px);
+}
+
+.contenedor_productos .producto_hijo .titulo{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contenedor_productos .producto_hijo .imagen{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor_productos .producto_hijo button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contenedor_productos .producto_hijo button:hover {
+    background-color: #218838;
+}
+
+@media (min-width: 768px){
+    .contenedor_productos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        padding-left: 130px;
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 1300px){
+    .contenedor_productos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        padding-left: 150px;
+        padding-top: 80px;
+    }
+
+}

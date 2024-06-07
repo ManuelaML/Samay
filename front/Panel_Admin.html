@@ -26,38 +26,37 @@
             <button class="boton_agregar">Eliminar Productos</button>
         </article>
         <div class="result-container_admin">
-        <form action="#" method="post" id="formulario">
+        <form action="#" method="post" id="formulario" >
             <!-- <p class="resultado-admin">
             </p> -->
                 <label for="nombreProducto">Nombre del producto</label>
-                <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Nombre del producto">
+                <input type="text" id="nombreProducto" name="nombreProducto" class="resultado-admin" placeholder="Nombre del producto">
 
                 <label for="referencia">Referencia del producto</label>
-                <input type="text" id="referencia" name="referencia" placeholder="referencia del producto">
+                <input type="text" id="referencia" name="referencia" class="resultado-admin" placeholder="referencia del producto">
 
                 <label for="precio">Precio del Producto por libra</label>
-                <input type="number" id="precio" name="precio" placeholder="precio del producto en libras">
+                <input type="number" id="precio" name="precio" class="resultado-admin" placeholder="precio del producto en libras">
             
                 <label for="cantidad">Cantidad Producto</label>
-                <input type="number" id="cantidad" name="cantidad" placeholder="cantidad en libras">
+                <input type="number" id="cantidad" name="cantidad" class="resultado-admin" placeholder="cantidad en libras">
 
-                <input type="file" id="imagenInput">
-                <button type="button" type="">Carga tu imagen</button>
-                <button class="boton_agregar" type="submit" >subir producto</button>
+                <input type="file" id="imagenInput">Carga tu imagen </label>
+                <button class="boton_agregar" type="submit" id="subirProducto" >subir producto</button>
         </form>
         <div class="iconos">
-            <button class="iconos-buton"><i class="fa-solid fa-pen  icono_tamano" style="color: #000;"></i></button>
-            <button class="iconos-buton"><i class="fa-solid fa-arrow-up-from-bracket icono_tamano" style="color: #050505;"></i></button>
-            <button class="iconos-buton"><i class="fa-regular fa-trash-can icono_tamano" style="color: #050505;"></i></button>
-            <button class="iconos-buton"><i class="fa-solid fa-plus icono_tamano" style="color: #000000;"></i></button>
+            <button type="submit" class="iconos-buton"><i class="fa-solid fa-pen  icono_tamano" style="color: #000;" id="btneditar"></i></button>
+            <button type="submit" class="iconos-buton"><i class="fa-regular fa-trash-can icono_tamano" style="color: #050505;" id="btneliminar"></i></button>
+            <button type="submit" class="iconos-buton"><i class="fa-solid fa-plus icono_tamano" style="color: #000000;" id="btnagregar"></i></button>
         </div>
         </div>
     </section>
     </main>
     <section class="footer_admin">
     </section>
+    <script src="./Assets/app/Pproductos.js"></script>
     <script src="./Assets/app/headeryfooter.js"></script>
     <script src="./Assets/app/inicio.js"></script>
-    <script src="./Assets/app/Panel_administrativo.js"></script>
+    <!-- <script src="./Assets/app/Panel_administrativo.js"></script> -->
 </body>
 </html>
