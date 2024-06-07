@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Monserrat', sans-serif;
-    background-image: url("./images/ImagenesProductos/saco.jpg");
+    background-image: url("./saco.jpg");
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center; 
