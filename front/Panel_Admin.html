@@ -51,16 +51,18 @@
                     </div>
                     <input type="file" id="subir-archivo" class="subir-input">
                 </label> 
+                <div id="preview" class="preview"></div>
+                <p id="upload-status" class="upload-status"></p>
                 </section>   
     
 
 
-                <button class="boton_agregar" type="submit" id="subirProducto" >subir producto</button>
+                <button class="boton_agregar" type="button" id="btnagregar" >subir producto</button>
         </form>
         <div class="iconos">
-            <button type="submit" class="iconos-buton"><i class="fa-solid fa-pen  icono_tamano" style="color: #000;" id="btneditar"></i></button>
-            <button type="reset" class="iconos-buton"><i class="fa-regular fa-trash-can icono_tamano" style="color: #050505;" id="btneliminar"></i></button>
-            <button type="reset" class="iconos-buton"><i class="fa-solid fa-rotate-right" style="color: #080808;"></i></button>
+            <button type="button" class="iconos-buton"><i class="fa-solid fa-pen  icono_tamano" style="color: #000;" id="btneditar"></i></button>
+            <button type="button" class="iconos-buton"><i class="fa-regular fa-trash-can icono_tamano" style="color: #050505;" id="btneliminar"></i></button>
+            <button type="reset" class="iconos-buton"><i class="fa-solid fa-rotate-right" style="color: #080808;" id="btnresetear"></i></button>
         </div>
         </div>
     </section>
@@ -70,6 +72,7 @@
     <script src="./Assets/app/Pproductos.js"></script>
     <script src="./Assets/app/headeryfooter.js"></script>
     <script src="./Assets/app/inicio.js"></script>
-    <script src="./Assets/app/Panel_administrativo.js"></script>
+    <script src="./Assets/app/Panel_Admin.js"></script>
+    <!-- <script src="./Assets/app/Panel_administrativo.js"></script> -->
 </body>
 </html>
