@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+
+  document.getElementById('subir-archivo').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    const uploadStatus = document.getElementById('upload-status');
+    
+    if (file && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const preview = document.getElementById('preview');
+            preview.innerHTML = `<img src="${e.target.result}" alt="Uploaded Image">`;
+            uploadStatus.textContent = 'La imagen ha sido cargada correctamente.';
+        };
+        reader.readAsDataURL(file);
+    } else {
+        uploadStatus.textContent = 'Por favor, sube un archivo de imagen válido.';
+    }
+});
     
     const productosGuardados=JSON.parse(localStorage.getItem("productos"))
     
