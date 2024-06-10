@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/styles/inicio.css">
-   <link rel="stylesheet" href="./Assets/styles/Panel_Admin.css">
+    <link rel="stylesheet" href="./Assets/styles/Panel_Admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="./images/samay.icon.jpg">
     <title>Panel Admin</title>
 </head>
@@ -20,15 +21,8 @@
            </article>
         </section>
         <section class="aside_admin">
-        <!-- <article class="contenedor_agregarProductos">
-            <button class="boton_agregar">Agregar Productos</button>
-            <button class="boton_agregar">Modificar Productos</button>
-            <button class="boton_agregar">Eliminar Productos</button>
-        </article> -->
         <div class="result-container_admin">
         <form action="#" method="post" id="formulario" >
-            <!-- <p class="resultado-admin">
-            </p> -->
                 <label for="nombreProducto">Nombre del producto</label>
                 <input type="text" id="nombreProducto" name="nombreProducto" class="resultado-admin" placeholder="Nombre del producto">
 
@@ -60,9 +54,9 @@
                 <button class="boton_agregar" type="button" id="btnagregar" >subir producto</button>
         </form>
         <div class="iconos">
-            <button type="button" class="iconos-buton"><i class="fa-solid fa-pen  icono_tamano" style="color: #000;" id="btneditar"></i></button>
-            <button type="button" class="iconos-buton"><i class="fa-regular fa-trash-can icono_tamano" style="color: #050505;" id="btneliminar"></i></button>
-            <button type="reset" class="iconos-buton"><i class="fa-solid fa-rotate-right" style="color: #080808;" id="btnresetear"></i></button>
+            <button type="button" class="iconos-buton" id="btneditar"><i class="fa-solid fa-pen  icono_tamano" style="color: #000;" ></i></button>
+            <button type="button" class="iconos-buton" id="btneliminar"><i class="fa-regular fa-trash-can icono_tamano" style="color: #050505;"></i></button>
+            <button type="reset" class="iconos-buton" id="btnresetear"><i class="fa-solid fa-rotate-right" style="color: #080808;"></i></button>
         </div>
         </div>
     </section>
