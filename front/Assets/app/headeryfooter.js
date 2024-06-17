@@ -11,6 +11,7 @@ header.innerHTML = `
      <div class="texto_menu">
       <ul>
         <li><a href="inicio.html">INICIO</a></li>
+         <li><a href="contacto.html">NOSOTROS</a></li>
         <li><a href="Productos.html">PRODUCTOS</a></li>
         <li><a href="#">BLOG</a></li>
         <li><a href="contacto.html">CONTACTO</a></li>
@@ -26,7 +27,7 @@ header.innerHTML = `
         <li ><a href="#" class="menuItem ">Nosotros</a></li>
         <li ><a href="Productos.html" class="menuItem ">Productos</a></li>
         <li ><a href="#" class="menuItem ">Blog</a></li>
-        <li ><a href="Productos.html" class="menuItem ">Contactos</a></li>
+        <li ><a href="contacto.html" class="menuItem ">Contacto</a></li>
       </ul>
     </div>
     </div>

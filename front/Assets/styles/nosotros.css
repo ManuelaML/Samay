@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 *{
     padding: 0;
     margin: 0;
@@ -18,15 +21,15 @@
 main {
     max-width: 1440px;
     margin: 0 auto;
-    height: 200vh;
-    margin-top: 15vh;
+    height: 230vh;
+    margin-top: 5vh; /*15vh */
     font-family: 'Montserrat', sans-serif;
   }
   h2 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     font-weight: 400;
     font-size: 25px;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
   }
   
@@ -34,7 +37,7 @@ main {
   
   .parallax {
     /* The image used */
-    background-image: url("../../imagenes/mANGOS.jpg");
+    background-image: url("../../images/mANGOS.jpg");
   
     /* Set a specific height */
     min-height: 80vh; 
@@ -77,9 +80,8 @@ main {
 
   .card-texto{
     margin: 10px 10px 10px 60px;
-  }
+}
   /*---card de jhan---*/
-
 .card {
     position: absolute;
     top: 250%;
@@ -432,11 +434,19 @@ main {
 
 
   /*----inicio media quirys----*/
+  @media (min-width: 360px) {
+    main{
+        height: 550vh;
+    }
+  }
   /*media 768*/
   @media (min-width: 768px){
     .header iframe{
         width:600px ;
         padding-left: 100px;
+    }
+    main{
+        height: 550vh;
     }
     .header p{
         margin-left: 20px;
@@ -455,6 +465,9 @@ main {
     .header iframe{
         width:1000px ;
         padding-left: 200px;
+    }
+    main{
+        height: 240vh;
     }
     .header p{
         margin-left: 20px;
