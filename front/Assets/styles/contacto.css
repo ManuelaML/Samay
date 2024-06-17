@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-  width: 90%;
   max-width: 400px;
   margin: 0 auto;
   background-color: #6eace5b3;
@@ -107,6 +106,168 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 600px;
+    max-width: inherit;
+  }
+
+  .hero__email {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .hero__main {
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    gap: 5%;
+  }
+  .hero__picture {
+    width: 30%;
+  }
+
+  .hero__img {
+    width: 100%;
+  }
+
+  .hero__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+  }
+
+  .hero__title {
+    padding-top: 3%;
+  }
+
+  .hero__texts--about {
+    width: 90%;
+  }
+
+  .hero__subtitle {
+    padding-bottom: 0;
+  }
+
+  .hero__subtitle--about {
+    padding-bottom: 5%;
+  }
+
+  .main__subtitle {
+    padding-bottom: 5.5%;
+  }
+
+  .main__skills {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .main__skill {
+    margin-bottom: 15px;
+  }
+
+  .main__courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero__subtitle--contacto {
+    padding-bottom: 5.5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+    gap: 16px;
+  }
+  .nav__links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .nav__link {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  .hero__main {
+    gap: 2.5%;
+  }
+
+  .hero__title {
+    font-size: 2.3rem;
+    padding-bottom: 1.5%;
+  }
+
+  .hero__paragraph {
+    font-size: 1.3rem;
+    padding-bottom: 2%;
+  }
+
+  .hero__paragraph--about {
+    /* display: block; */
+    max-width: 800px;
+  }
+
+  .hero__links {
+    font-size: 1.2rem;
+    gap: 16px;
+    padding-left: 0.5%;
+  }
+  .main__project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .main__contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    /* padding-bottom: 0; */
+    padding: 0 10%;
+  }
+
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .figure__contact {
+    display: block;
+    height: auto;
+  }
+
+  .footer {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 1150px) {
+  .hero__paragraph {
+    padding: 4% 0;
+  }
+
+  .hero__subtitle {
+    font-size: 2.5rem;
+  }
+
+  .main__subtitle--academic {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .hero__title {
+    font-size: 3rem;
   }
 }
