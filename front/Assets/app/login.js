@@ -1,46 +1,43 @@
-const usuariosGuardados=JSON.parse(localStorage.getItem("usuarios"))
+document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById("loginForm");
+    const errorMessage = document.getElementById("errorMessage");
 
-let usuarios=[
-    {
-        correoi: "samay@gmail.com",
-        contrasenai: "Grupo6"
-    }
-]
-
-if (usuariosGuardados){
-    usuarios=usuariosGuardados;
-}
-
-const loginForm = document.getElementById("loginForm");
-loginForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+ 
+    const preStoredUser = {
+        email:"tester@gmail.com",
+        password: btoa("password123") 
+    };
 
     
-    const password = document.getElementById("password").value.trim();
-    const email = document.getElementById("email").value.trim();
-
-    const usuario = usuarios.find(usuario => usuario.correoi === email);
-
-    if ( !password || !email) {
-        alert("Por favor, complete todos los campos.")
-        return;
-    }
-    
-    
-    if (!usuario) {
-        alert("Correo electrónico no registrado");
-        return;
+    if (!localStorage.getItem("user")) {
+        localStorage.setItem("user", JSON.stringify(preStoredUser));
     }
 
-    
-    if (usuario.contrasenai !== password) {
-        alert("Contraseña incorrecta");
-        return;
-    }
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    alert("Inicio de sesión exitoso");
-    return;
-    
+        
+        const password = document.getElementById("password").value.trim();
+        const email = document.getElementById("email").value.trim();
 
+        if ( !password || !email) {
+            errorMessage.textContent = "Por favor, complete todos los campos.";
+            errorMessage.style.color = "red";
+            return;
+        }
+
+        
+        const storedUser = JSON.parse(localStorage.getItem("user"));
+
+      
+        if ((password) === atob(storedUser.password) && email === atob(storedUser.email)) { //atob es una funcion de js que codifica la informacion
+            errorMessage.textContent = "Inicio de sesión exitoso!";
+            errorMessage.style.color = "green";
+        } else {
+            errorMessage.textContent = "Nombre de usuario o contraseña inválidos.";
+            errorMessage.style.color = "red";
+        }
+
+        
+    });
 });
-
