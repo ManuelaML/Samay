@@ -102,3 +102,13 @@ function actualizarHTMLProductos(contenedorHTML) {
 
 
 actualizarHTMLProductos(contenedorProductos)
+
+
+
+
+
+
+
+
+
+
