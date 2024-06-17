@@ -34,7 +34,7 @@ main {
   
   .parallax {
     /* The image used */
-    background-image: url("imagenes/mANGOS.jpg");
+    background-image: url("../../imagenes/mANGOS.jpg");
   
     /* Set a specific height */
     min-height: 80vh; 
