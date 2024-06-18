@@ -22,7 +22,7 @@ loginForm.addEventListener('submit', function(event) {
         alert("Por favor, complete todos los campos.");
         return;
     }
-
+    const usuarios = JSON.parse(localStorage.getItem("usuarios"));
     const usuario = usuarios.find(usuario => usuario.correoi === email);
 
     if (!usuario) {
