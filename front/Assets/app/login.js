@@ -24,7 +24,6 @@ loginForm.addEventListener('submit', function(event) {
     }
 
     const usuario = usuarios.find(usuario => usuario.correoi === email);
-    console.log(usuario)
 
     if (!usuario) {
         alert("Correo electrónico no registrado.");
