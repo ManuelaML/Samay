@@ -50,16 +50,7 @@
     border-radius: 30px 0px 0px 0px ;
     font-family: Montserrat;
 }
-/* .contenedor_agregarProductos{
-    height: 250px;
-    max-width:298px ;
-    margin: 30px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 20px;
-} */
+
 .contenedor_agregarProductos .boton_agregar{
     background-color: rgb(18,105,69, 81%);
     font-family: Montserrat;
