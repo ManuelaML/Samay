@@ -5,8 +5,8 @@ document.getElementById('boton_SignUp').addEventListener('click',(event) => {
 
     let usuarios;
 
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value.trim();
 
     if (!email || !password) {
         alert("Por favor, complete todos los campos.");
@@ -25,17 +25,17 @@ document.getElementById('boton_SignUp').addEventListener('click',(event) => {
 
     const usuario = usuarios.find(usuario => usuario.correoi === email);
 
-    if (!usuario) {
-        alert("Correo electrónico no registrado.");
-        return;
-    }
+  if (!usuario) {
+    alert('Correo electrónico no registrado.');
+    return;
+  }
 
-    if (usuario.contrasenai !== password) {
-        alert("Contraseña incorrecta.");
-        return;
-    }
+  if (usuario.contrasenai !== password) {
+    alert('Contraseña incorrecta.');
+    return;
+  }
 
-    alert("Inicio de sesión exitoso");
+  alert('Inicio de sesión exitoso');
 });
 function toggleContraseña(campopas) {
     const campoContraseña = document.getElementById(campopas);
