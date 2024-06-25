@@ -17,7 +17,6 @@
 .nav-bar {
   width: 360px;
   height: 50px;
-  margin: 4px auto;
   padding-top: 5px;
   display: flex;
   justify-content: space-between;
