@@ -94,7 +94,7 @@
   width: 170px;
   height: 50px;
   padding-top: 10px;
-  padding-left: 1rem;
+  padding-left: 2rem;
   /* border: 2px solid green; */
 }
 .icon .iconos_header {
@@ -189,7 +189,7 @@ footer img {
   }
 
   .icon {
-    margin-right: 50px;
+    margin-left: 2rem;
   }
   .contenedor-fotter {
     max-width: 768px;
@@ -216,7 +216,7 @@ footer img {
     margin-left: 20px;
   }
   .icon {
-    margin-right: 50px;
+    margin-left: 2rem;
   }
   .footerTest {
     max-width: 1300px;
@@ -307,7 +307,7 @@ footer img {
   .icon {
     /* border: green solid 2px; */
     margin-bottom: 5em;
-    margin-right: 3em;
+    margin-left: 2rem;
   }
   .icon .iconos_header {
     font-size: 30px;
@@ -419,7 +419,7 @@ footer img {
   .icon {
     /* border: green solid 2px; */
     margin-bottom: 5em;
-    margin-right: 3em;
+    margin-left: 2rem;
   }
   .icon .iconos_header {
     font-size: 30px;

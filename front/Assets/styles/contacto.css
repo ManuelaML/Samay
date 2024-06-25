@@ -106,7 +106,7 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    max-width: inherit;
+    min-width: 40%;
   }
 
   .hero__email {
@@ -175,6 +175,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .container{
+    min-width: 40%;
+  }
   .nav {
     display: flex;
     gap: 16px;
@@ -253,6 +256,9 @@ body {
 }
 
 @media (min-width: 1150px) {
+  .container{
+    min-width: 40%;
+    }
   .hero__paragraph {
     padding: 4% 0;
   }
@@ -267,6 +273,9 @@ body {
 }
 
 @media (min-width: 1300px) {
+  .container{
+    min-width: 50%;
+    }
   .hero__title {
     font-size: 3rem;
   }
