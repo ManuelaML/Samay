@@ -21,24 +21,27 @@
   background-image: url(https://i.pinimg.com/564x/31/fd/18/31fd1814f22ebb3ad88a27d371c3a6de.jpg);
   background-size: cover;
   background-position: center;
-  height: 250px;
+  aspect-ratio: 2/1;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .image-2 {
   background-image: url(https://i.pinimg.com/564x/3d/df/92/3ddf929dfdf81954cfb70e1ec5f7825b.jpg);
   background-size: cover;
   background-position: center;
-  height: 250px;
+  aspect-ratio: 2/1;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .image-3 {
   background-image: url(https://i.pinimg.com/564x/56/77/c6/5677c6f34559699df24eef7111e8469e.jpg);
   background-size: cover;
   background-position: center;
-  height: 350px;
+  aspect-ratio: 2/1;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .content h2 {
