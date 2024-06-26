@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /*----inicio header---*/
@@ -25,7 +25,7 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Amethysta', serif;
   font-weight: 400;
   font-size: 25px;
   color: rgb(255, 255, 255);
@@ -65,12 +65,21 @@ h2 {
 }
 
 .parallax button {
-  width: 100px;
-  height: 30px;
-  background-color: #5bca87;
+  height: 40px;
+  background-color: #28a745;
   border-radius: 50px;
   border: 1px solid;
   box-shadow: 3px 3px #201e1e;
+  font-family: 'Amethysta', serif;
+  width: 250px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.parallax button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Amethysta', serif;
 }
 
 /*------fin parallax----*/
@@ -83,6 +92,7 @@ h2 {
 
 .card-texto {
   margin: 10px 10px 10px 60px;
+  font-family: 'Montserrat', sans-serif;
 }
 /*---card de jhan---*/
 .card {

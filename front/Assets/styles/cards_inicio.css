@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body {
-  height: 0;
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .carousel-container {
@@ -18,6 +19,7 @@ body {
   flex: 1;
   padding: 20px;
   text-align: justify;
+  font-family: 'Amethysta', serif;
 }
 
 .carousel-images {

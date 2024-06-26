@@ -132,34 +132,49 @@ p {
   color: #0056b3;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 768px){ 
   .contenedor_principal {
-    width: 400px;
+    width: 450px;
+    height: fit-content;
+  }
+  .boton_SignUp {
+    width: 100%;
+    margin-top: 0.5px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1300px) {
   .contenedor_principal {
-    width: 700px;
-    height: 630px;
+    width: 450px;
+    height: fit-content;
+  }
+  .boton_SignUp {
+    width: 100%;
+    margin-top: 0.5px;
   }
 }
 @media only screen and (min-width: 1301px) and (max-width: 1590px) {
   .contenedor_principal {
-    width: 800px;
-    height: 570px;
+    width: 200px;
+    height: fit-content;
     margin-top: 20px;
   }
   .licencia {
     margin-top: 0.5px;
   }
   .boton_SignUp {
+    width: 100%;
     margin-top: 0.5px;
   }
 }
 @media only screen and (min-width: 1591px) {
   .contenedor_principal {
-    width: 800px;
-    height: 630px;
+    width: 200px;
+    height: fit-content;
     margin-top: 20px;
+    padding: 20px;
+  }
+  .boton_SignUp {
+    width: 100%;
+    margin-top: 0.5px;
   }
 }
