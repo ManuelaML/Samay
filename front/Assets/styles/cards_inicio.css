@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  height: 0;
+  margin: 0;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+
+.section_slider h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.carousel-text {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+}
+
+.carousel-images {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  transition: left 1s;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-images img.active {
+  left: 0;
+  opacity: 1;
+}
+
+.carousel-images img.prev {
+  left: -100%;
+  opacity: 0;
+}
