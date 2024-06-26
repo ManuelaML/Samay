@@ -105,7 +105,7 @@
 }
 
 .footerTest {
-  background-color: #c5dcf2;
+  background-color: #579cd9;
   height: 200px;
   margin: 0 auto;
   min-width: 360px;
@@ -118,8 +118,8 @@
   max-width: 360px;
   margin-top: 5px;
   padding-bottom: 10px;
-  border-top: 2px solid #73441a;
-  border-bottom: 2px solid #73441a;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 .contenedor-fotter ul {
   margin-top: 5px;
@@ -154,6 +154,25 @@ footer img {
   height: 10px;
   font-size: 30px;
   margin-top: 30px;
+}
+.arriba_boton {
+  font-size: 20px;
+}
+#scrollBoton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #ffff;
+  color: white;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 .Copyright-j {
   margin-top: 10px;
@@ -340,6 +359,7 @@ footer img {
     display: inline-block;
   }
   .contenedor-fotter ul li a {
+    font-size: 22px;
     text-decoration: none;
     color: #000;
   }
@@ -350,10 +370,11 @@ footer img {
     margin-bottom: 8px;
   }
   .contenedor-iconos .iconos {
-    font-size: 40px;
+    font-size: 25px;
     gap: 30px;
     width: 50px;
   }
+
   .Copyright-j {
     max-width: 1590px;
     display: flex;
@@ -361,9 +382,11 @@ footer img {
   }
   .Copyright-j #derechos_reservados {
     margin-left: 5rem;
+    margin-top: 40px;
   }
   .Copyright-j .texto_copy {
     display: inline-block;
+    margin-top: 40px;
   }
   .Copyright-j .links_footer {
     margin-right: 5rem;

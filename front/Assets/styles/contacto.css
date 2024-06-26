@@ -19,7 +19,6 @@
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  font-family: var(--font);
 }
 
 .container {
@@ -32,11 +31,11 @@ body {
 
 .hero__subtitle {
   text-align: center;
-  font-weight: 100;
+  font-weight: 600;
   font-size: 1.9rem;
   padding: 20px 0;
   color: black;
-  font-family: 'Madimi One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .form {
@@ -80,8 +79,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .form__submit {
-  font-family: 'Madimi One', sans-serif;
-  width: fit-content;
   background-color: #060606;
   border: none;
   border: 2px solid #d1d1d4;
@@ -92,6 +89,12 @@ body {
   border-radius: 15px;
   text-align: center;
   margin: 0 auto;
+  width: 250px;
+  font-family: 'Amethysta', serif;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 1px solid;
+  box-shadow: 3px 3px #201e1e;
 }
 
 .form__submit:hover {
@@ -175,7 +178,7 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .container{
+  .container {
     min-width: 40%;
   }
   .nav {
@@ -256,9 +259,9 @@ body {
 }
 
 @media (min-width: 1150px) {
-  .container{
+  .container {
     min-width: 40%;
-    }
+  }
   .hero__paragraph {
     padding: 4% 0;
   }
@@ -273,9 +276,9 @@ body {
 }
 
 @media (min-width: 1300px) {
-  .container{
+  .container {
     min-width: 50%;
-    }
+  }
   .hero__title {
     font-size: 3rem;
   }
