@@ -34,9 +34,11 @@ header.innerHTML = `
 `;
 
 footer.innerHTML = `
+ <button id="scrollBoton" title="ir arriba">
+      <i class="fa-solid fa-arrow-up arriba_boton" style="color: #00254a"></i>
+  </button>
 <div class="footerTest">
 <div class="contenedor-fotter">
-<img src="./images/logo_samay.jpg" alt="logo samay">
 <ul>
   <li><a href="Pinicio.html">Inicio</a></li>
   <li><a href="nosotros.html">Nosotros</a></li>
