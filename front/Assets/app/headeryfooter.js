@@ -12,7 +12,7 @@ header.innerHTML = `
         <li><a href="Pinicio.html">INICIO</a></li>
          <li><a href="nosotros.html">NOSOTROS</a></li>
         <li><a href="Pproductos.html">PRODUCTOS</a></li>
-        <li><a href="#">BLOG</a></li>
+        <li><a href="blog.html">BLOG</a></li>
         <li><a href="contacto.html">CONTACTO</a></li>
       </ul>     
     </div>
@@ -25,7 +25,7 @@ header.innerHTML = `
         <li><a href="Pinicio.html" class="menuItem" id="inicio">Inicio</a></li>
         <li ><a href="nosotros.html" class="menuItem ">Nosotros</a></li>
         <li ><a href="Pproductos.html" class="menuItem ">Productos</a></li>
-        <li ><a href="#" class="menuItem ">Blog</a></li>
+        <li ><a href="blog.html" class="menuItem ">Blog</a></li>
         <li ><a href="contacto.html" class="menuItem ">Contacto</a></li>
       </ul>
     </div>
@@ -41,7 +41,7 @@ footer.innerHTML = `
   <li><a href="Pinicio.html">Inicio</a></li>
   <li><a href="nosotros.html">Nosotros</a></li>
   <li><a href="Pproductos.html">Productos</a></li>
-  <li><a href="#">Blog</a></li>
+  <li><a href="blog.html">Blog</a></li>
   <li><a href="contacto.html">Contacto</a></li>
 </ul>
 
