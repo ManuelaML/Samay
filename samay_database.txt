@@ -1,0 +1,118 @@
+CREATE DATABASE samayGrupo;
+
+USE samay;
+
+CREATE TABLE user (
+    user_id INT PRIMARY KEY AUTO_INCREMENT, 
+    fullName VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password_User VARCHAR(255) NOT NULL, 
+    cellphone INT NOT NULL, 
+    address VARCHAR(255) NOT NULL, 
+    role_user VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE client (
+    client_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    payment_method VARCHAR(50),
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES user(user_id)
+);
+
+CREATE TABLE order_user (
+    order_id INT PRIMARY KEY AUTO_INCREMENT,
+    clientId_fk INT NOT NULL, 
+    fecha DATETIME,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (clientId_fk) REFERENCES client(client_id)
+);
+
+CREATE TABLE farmer (
+    farmer_id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_empresa_proveedor VARCHAR(100) NOT NULL,
+    userId_fk INT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId_fk) REFERENCES user(user_id)
+);
+
+CREATE TABLE product (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    name_product VARCHAR(255) NOT NULL,
+    stock INT NOT NULL,
+    unit_price DECIMAL(10 , 2 ) NOT NULL,
+    farmerId_fk INT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (farmerId_fk)
+        REFERENCES farmer (farmer_id)
+);
+
+CREATE TABLE product_table (
+    product_farmer_id INT PRIMARY KEY AUTO_INCREMENT,
+    farmerId_fk INT NOT NULL,
+    productId_fk INT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (farmerId_fk) REFERENCES farmer(farmer_id),
+    FOREIGN KEY (productId_fk) REFERENCES product(product_id)
+);
+
+
+INSERT INTO user (fullName, email, password_User, cellphone, address, role_user)
+VALUES 
+('Juan Pérez', 'juan.perez@example.com', 'password123', 3001234567, 'Calle 123 #45-67, Bogotá', 'admin'),
+('María Gómez', 'maria.gomez@example.com', 'password123', 3007654321, 'Carrera 12 #34-56, Bogotá', 'client'),
+('Carlos Rodríguez', 'carlos.rodriguez@example.com', 'password123', 3012345678, 'Avenida 9 #89-12, Bogotá', 'farmer'),
+('Laura Martínez', 'laura.martinez@example.com', 'password123', 3018765432, 'Calle 7 #45-78, Bogotá', 'client'),
+('Luis Fernández', 'luis.fernandez@example.com', 'password123', 3023456789, 'Carrera 6 #23-45, Bogotá', 'farmer');
+ 
+
+INSERT INTO client (user_id, payment_method)
+VALUES 
+(2, 'Credit Card'),
+(4, 'PayPal'),
+(2, 'Bank Transfer'),
+(4, 'Credit Card'),
+(2, 'Cash');
+ 
+
+INSERT INTO order_user (clientId_fk, fecha)
+VALUES 
+(1, '2023-07-01 12:30:00'),
+(2, '2023-07-02 14:00:00'),
+(3, '2023-07-03 16:45:00'),
+(4, '2023-07-04 10:15:00'),
+(5, '2023-07-05 11:20:00');
+ 
+
+INSERT INTO farmer (nombre_empresa_proveedor, userId_fk)
+VALUES 
+('AgroExport S.A.', 3),
+('Frutas y Verduras Ltda.', 5),
+('Hortalizas de Bogotá', 3),
+('Campos Verdes', 5),
+('Proveedores Agrícolas', 3);
+ 
+
+INSERT INTO product (name_product, stock, unit_price, farmerId_fk)
+VALUES 
+('Tomates', 100, 1.50, 1),
+('Papayas', 200, 3.00, 2),
+('Lechugas', 150, 0.75, 3),
+('Manzanas', 250, 2.50, 4),
+('Zanahorias', 180, 1.20, 5);
+ 
+
+INSERT INTO product_table (farmerId_fk, productId_fk)
+VALUES 
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5);
